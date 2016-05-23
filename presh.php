@@ -670,7 +670,11 @@ class Presh {
   
   public function constant($name){
 	  if( defined($name) ){
-		  echo constant ($name);
+		  $const = constant ($name);
+		  if(is_bool($const)){
+			  $const =  $const ? 'true' : 'false';
+		  }
+		  echo $const;
 	  }else{
 		  exit(1);
 	  }
