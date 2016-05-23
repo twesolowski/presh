@@ -662,6 +662,20 @@ class Presh {
       }
   }
   
+  /**
+  * Shows value from given constant
+  *
+  * @param string $name constant name
+  */
+  
+  public function constant($name){
+	  if( defined($name) ){
+		  echo constant ($name);
+	  }else{
+		  exit(1);
+	  }
+  }
+  
 
   /**
   * Deletes the cache classes index file at cache/class_index.php
