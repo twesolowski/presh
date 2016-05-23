@@ -680,6 +680,22 @@ class Presh {
 	  }
   }
   
+  /**
+  * Shows class path
+  *
+  * @param string $classname class name
+  */
+  
+  public function classpath($classname){
+	  $pal = PrestaShopAutoload::getInstance();
+	  $classpath = $pal->getClassPath($classname);
+	  if($classpath){
+		 fwrite(STDOUT, $classpath);
+	  }else{
+		  exit(1);
+	  }
+  }
+  
 
   /**
   * Deletes the cache classes index file at cache/class_index.php
