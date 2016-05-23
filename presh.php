@@ -359,7 +359,7 @@ class Presh {
   *
   * @return string running Prestashop version
   */
-  public function get_running_version() {
+  protected function get_running_version() {
     return $this->get_global_value('PS_VERSION_DB');
   }
 
