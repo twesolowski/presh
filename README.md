@@ -62,6 +62,8 @@ is like this:
     $ presh activate_shop 1
     
     $ presh run example_run_file.php 1
+    
+	$ presh constant _DB_SERVER_
 
 - Presh also offers a way to fix Prestashop problems with SSL/TLS mail sending.
 It is done through a) the inclusion of a newer version of
