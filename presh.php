@@ -674,7 +674,7 @@ class Presh {
 		  if(is_bool($const)){
 			  $const =  $const ? 'true' : 'false';
 		  }
-		  echo $const;
+		  fwrite(STDOUT, $const);
 	  }else{
 		  exit(1);
 	  }
